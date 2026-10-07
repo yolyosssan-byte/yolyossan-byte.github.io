@@ -1,0 +1,170 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #08090d;
+    color: white;
+    line-height: 1.6;
+}
+
+header {
+    width: 100%;
+    padding: 22px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #1d1f27;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav {
+    display: flex;
+    gap: 25px;
+}
+
+nav a {
+    color: #aaa;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: white;
+}
+
+.hero {
+    min-height: 75vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.small-title {
+    color: #8b5cf6;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    margin-bottom: 15px;
+}
+
+.hero h1 {
+    font-size: 52px;
+    max-width: 800px;
+    line-height: 1.1;
+}
+
+.hero h1 span {
+    display: block;
+    color: #8b5cf6;
+}
+
+.description {
+    max-width: 600px;
+    color: #aaa;
+    margin: 25px 0;
+}
+
+.button {
+    background: #7c3aed;
+    color: white;
+    text-decoration: none;
+    padding: 13px 25px;
+    border-radius: 8px;
+}
+
+.products,
+.about {
+    padding: 90px 8%;
+    text-align: center;
+}
+
+.products h2,
+.about h2 {
+    font-size: 36px;
+    margin-bottom: 35px;
+}
+
+.product-card {
+    max-width: 400px;
+    margin: auto;
+    padding: 35px;
+    border: 1px solid #252733;
+    border-radius: 15px;
+    background: #101117;
+}
+
+.product-icon {
+    font-size: 40px;
+    color: #8b5cf6;
+    margin-bottom: 15px;
+}
+
+.product-card h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.product-card p,
+.about p {
+    color: #999;
+}
+
+.product-card button {
+    margin-top: 20px;
+    padding: 11px 20px;
+    border: none;
+    border-radius: 7px;
+    background: #27232f;
+    color: white;
+}
+
+.about {
+    border-top: 1px solid #1d1f27;
+}
+
+.about p {
+    max-width: 600px;
+    margin: auto;
+}
+
+footer {
+    text-align: center;
+    padding: 30px;
+    color: #666;
+    border-top: 1px solid #1d1f27;
+}
+
+@media (max-width: 600px) {
+
+    header {
+        padding: 18px 5%;
+    }
+
+    nav {
+        gap: 12px;
+        font-size: 13px;
+    }
+
+    .hero h1 {
+        font-size: 38px;
+    }
+
+    .products,
+    .about {
+        padding: 70px 5%;
+    }
+}
